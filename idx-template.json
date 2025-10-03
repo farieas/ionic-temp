@@ -1,1 +1,8 @@
-
+{
+  "name": "ionic template",
+  "description": "Start a simple generative ionic app",
+  "categories": [
+    "Mobile", "Web"
+  ],
+  "icon": "https://www.gstatic.com/images/branding/productlogos/gemini_2025_blue/v1/192px.svg",
+}
