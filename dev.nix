@@ -17,7 +17,6 @@
     workspace = {
       # Runs when a workspace is first created with this `dev.nix` file
       onCreate = {
-        echo "On create .."
         npm-install = "npm ci --no-audit --prefer-offline --no-progress --timing || npm i --no-audit --no-progress --timing";
         # Open editors for the following files by default, if they exist:
         default.openFiles = [ "src/app/app.component.ts" ];
