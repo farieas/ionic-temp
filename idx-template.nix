@@ -2,7 +2,7 @@
   channel = "stable-25.05";
   packages = [ pkgs.nodejs_24 ];
   bootstrap = ''
-    mkdir "$WS_NAME"
+    
     npx --prefer-offline -y @ionic/cli start "$WS_NAME" blank --type=angular --no-deps --no-git --no-link --no-interactive
     mkdir -p "$WS_NAME"/.idx
     cp ${./dev.nix} "$WS_NAME"/.idx/dev.nix
