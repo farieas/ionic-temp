@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   channel = "stable-25.05";
-  packages = [ pkgs.nodejs_20 ];
+  packages = [ pkgs.nodejs_24 ];
   bootstrap = ''
     mkdir "$WS_NAME"
     npx --prefer-offline -y @ionic/cli start "$WS_NAME" blank --type=angular --no-deps --no-git --no-link --no-interactive
