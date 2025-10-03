@@ -3,7 +3,7 @@
   packages = [ pkgs.nodejs_24 ];
   bootstrap = ''
     npx --prefer-offline -y @ionic/cli start "$WS_NAME" blank --type=angular --no-deps --no-git --no-link --no-interactive
-    mkdir "$WS_NAME"/.idx
+    mkdir -p "$WS_NAME"/.idx
     cp ${./dev.nix} "$WS_NAME"/.idx/dev.nix
     mv "$WS_NAME" "$out"
     chmod -R u+w "$out"
