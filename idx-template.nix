@@ -1,6 +1,9 @@
 { pkgs, ... }: {
   channel = "stable-25.05";
-  packages = [ pkgs.nodejs_24 ];
+  packages = [
+    pkgs.nodejs_24 
+    pkgs.git
+  ];
   bootstrap = ''
     
     npx --prefer-offline -y @ionic/cli start "$WS_NAME" blank --type=angular --no-deps --no-git --no-link --no-interactive
